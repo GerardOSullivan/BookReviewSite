@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='canonical' href='https://getbootstrap.com/docs/5.1/examples/navbars/')
+    // Bootstrap core CSS
+    style.
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+    // Custom styles for this template
+    link(href='/stylesheets/navbar.css' rel='stylesheet')
+    link(href='/stylesheets/login.css' rel='stylesheet')
+    link(href='/stylesheets/index.css' rel='stylesheet')
+  body
+    nav.navbar.navbar-dark.bg-dark(aria-label='First navbar example')
+        .container-fluid
+          a.navbar-brand(href='#') Book Review
+          button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarsExample01' aria-controls='navbarsExample01' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarsExample01.collapse.navbar-collapse
+            ul.navbar-nav.me-auto.mb-2
+              li.nav-item
+                a.nav-link(href='/') Home
+              li.nav-item
+                a.nav-link(href='/login') Login
+              li.nav-item
+                a.nav-link(href='/registration') Register Account
+    .container
+      block content
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/bootstrap.bundle.min.js')
+    

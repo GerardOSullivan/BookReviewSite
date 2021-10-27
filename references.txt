@@ -1,0 +1,17 @@
+clean code:
+// image gotten from https://www.bookdepository.com/Clean-Code-Robert-Martin/9780132350884?redirected=true&utm_medium=Google&utm_campaign=Base1&utm_source=IE&utm_content=Clean-Code&selectCurrency=EUR&w=AFFPAU99Z98D6CA8V9DU&gclid=CjwKCAjw_L6LBhBbEiwA4c46ukTXzORzhdbv9c3fpZUJ1r970lrFQ94pecszJJFo4MdXN9QOzLkMzRoCYVEQAvD_BwE on the 20/10/21
+
+software testing:
+// image gotten from https://bit.ly/3vK5P9a on the 20/10/21
+
+Data structutres:
+// image gotten from https://bit.ly/313F7xb on the 20/10/21
+
+Data structures2:
+// image gotten from https://bit.ly/313F7xb on the 20/10/21
+
+OOAD Book:
+// image gotten from https://bit.ly/3bb7ew7 on the 20/10/21
+
+OOAD2 Book
+// image gotten from https://bit.ly/3bb7ew7 on the 20/10/21

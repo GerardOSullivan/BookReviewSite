@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+        h1= pageHeader.title 
+            p= pageHeader.strapline
+    section.details-card
+      .container
+        .row
+            each review in reviews
+              .col-md-4
+                .card-content
+                  .card-img
+                    img(src=review.image alt='')
+                  .card-desc
+                    h3=review.name
+                    p=review.description
+                    a.btn-card(href='#') Read
+
+
+  

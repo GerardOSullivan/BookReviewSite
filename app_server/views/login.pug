@@ -1,0 +1,17 @@
+extends layout
+block content
+    .container
+      h1.form-heading
+      .login-form
+        .main-div
+          .panel
+            h2 Login
+            p Please enter your email and password
+          form#Login
+            .form-group
+              input#inputEmail.form-control(type='email' placeholder='Email Address')
+            .form-group
+              input#inputPassword.form-control(type='password' placeholder='Password')
+            .forgot
+              a(href='') Forgot password?
+            button.btn.btn-primary(type='submit') Login
