@@ -1,3 +1,12 @@
+const request = require('request');
+const apiOptions = { 
+    server : 'http://localhost:3000' 
+    }; 
+    if (process.env.NODE_ENV === 'production') { 
+    apiOptions.server = 'https://pure-temple-67771.herokuapp.com'; 
+    }
+    
+
 /* GET 'home' page */
 const homepage = function(req, res){
 res.render('index', { 
