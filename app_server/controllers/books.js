@@ -20,12 +20,11 @@ const _renderHomepage = function(req, res, responseBody){
 
 
 const  homepage = function(req, res){
-    const path = '/api/books/'; 
+    const path = '/api/books'; 
     const requestOptions = { 
     url : apiOptions.server + path, 
     method : 'GET', 
-    json : {},
-    qs : {}
+    json : {}
     }; 
     request(requestOptions, (err, response, body) => { 
     _renderHomepage(req, res, body); 
