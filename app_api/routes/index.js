@@ -6,7 +6,7 @@ const ctrlbooks = require('../controllers/books');
 // books
 router
   .route('/books')
-  .get(ctrlbooks.booksReadOne)
+  .get(ctrlbooks.booksList)
   .post(ctrlbooks.booksCreate);
 
 router
