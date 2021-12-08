@@ -22,6 +22,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app_public')));
+
+app.use('/api', function(req, res, next) {
+res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+res.setHeader('Access-Control-Allow-Credentials', true);
+if ('OPTIONS' === req.method) {
+  res.sendStatus(200);
+}
+else {
+  next();
+}
+});
 
 app.use('/', index);
 app.use('/api', apiRoutes);

@@ -20,3 +20,4 @@ dbConnection.once("open", () => console.log("Connected to DB!"));
 mongoose.connect(dbURI);
 
 require('./books');
+require('./registeredAccount');

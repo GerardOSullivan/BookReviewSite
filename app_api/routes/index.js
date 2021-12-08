@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const ctrlbooks = require('../controllers/books'); 
-//const ctrlLoginAndRegistration = require('../controllers/LoginAndRegistration');
+const ctrlLoginAndRegistration = require('../controllers/registration');
 
 // books
 router
@@ -15,26 +15,28 @@ router
   .put(ctrlbooks.booksUpdateOne)
   .delete(ctrlbooks.booksDeleteOne);
   
-/*// login
-router
-  .route('/locations/:locationid/reviews')
-  .post(ctrlLoginAndRegistration.reviewsCreate);
-
-router
-  .route('/locations/:locationid/reviews/:reviewid')
-  .get(ctrlLoginAndRegistration.reviewsReadOne)
-  .put(ctrlLoginAndRegistration.reviewsUpdateOne)
-  .delete(ctrlLoginAndRegistration.reviewsDeleteOne);
-  
 // registration
 router
-  .route('/locations/:locationid/reviews')
-  .post(ctrlLoginAndRegistration.reviewsCreate);
+  .route('/registration')
+  .get(ctrlLoginAndRegistration.accountsList)
+  .post(ctrlLoginAndRegistration.accountsCreate);
 
 router
-  .route('/locations/:locationid/reviews/:reviewid')
-  .get(ctrlLoginAndRegistration.reviewsReadOne)
-  .put(ctrlLoginAndRegistration.reviewsUpdateOne)
-  .delete(ctrlLoginAndRegistration.reviewsDeleteOne);*/
+  .route('/registration/:registrationid')
+  .get(ctrlLoginAndRegistration.accountsReadOne)
+  .put(ctrlLoginAndRegistration.accountsUpdateOne)
+  .delete(ctrlLoginAndRegistration.accountsDeleteOne);
+
+  /*// login
+router
+  .route('/api/login')
+  .post(ctrlLoginAndRegistration.loginCreate);
+
+router
+  .route('/api/login/:loginid')
+  .get(ctrlLoginAndRegistration.loginReadOne)
+  .put(ctrlLoginAndRegistration.loginUpdateOne)
+  .delete(ctrlLoginAndRegistration.loginDeleteOne);
+  */
 
 module.exports = router;
