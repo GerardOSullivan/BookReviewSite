@@ -1,6 +1,6 @@
 const request = require('request');
 const apiOptions = { 
-    server : 'http://localhost:3000' 
+    server : 'http://bookreview222.herokuapp.com' //The old code "server : 'http://localhost:3000'" wouldnt work on heroku
     }; 
     if (process.env.NODE_ENV === 'production') { 
     apiOptions.server = 'https://bookreview222.herokuapp.com'; 
