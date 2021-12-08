@@ -1,4 +1,4 @@
-# This is my Book Review Angular Web Application
+# This is my Book Review Web Application
 
 This is a simple application used to learn the basics of the MEAN stack.
 I have created an express application that connects to a Mongo database through the API.
